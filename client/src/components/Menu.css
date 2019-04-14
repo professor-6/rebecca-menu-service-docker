@@ -1,0 +1,139 @@
+
+h3 {
+font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
+}
+
+.menuBox {
+position: relative;
+width: 608px;
+height: 713px;
+}
+
+.buttonsBox {
+z-index: 100;
+width: 608px;
+height: 127px;
+border-top: 1px solid #d2d8e0;
+border-bottom: 1px solid #d2d8e0;
+align-items: left;
+}
+
+.navButton {
+height: 38px;
+max-width: 130px;
+text-align: center;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 14px;
+border: 1px solid #d2d8e0;
+border-radius: 2px;
+background-color: white;
+margin-top: 17px;
+margin-right: 17px;
+padding-left: 17px;
+padding-right: 17px;
+padding-top: 2px;
+}
+
+.navButton:active, 
+.navButton:focus {
+ border:2px solid #c9022d; 
+}
+
+button:focus { outline:0 !important; }
+
+.itemName {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 15px;
+font-weight: 400;
+height: 14px;
+display: inline-block;
+width: 153px;
+margin-bottom: auto;
+margin-top: 10px;
+}
+.itemName:first-letter {
+    text-transform:capitalize;
+}
+.itemPrice {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 15px;
+font-weight: 400;
+text-align: right;
+align-items: right;
+height: 14px;
+display: inline-block;
+width: 123px;
+margin-bottom: auto;
+margin-top: 10px;
+}
+
+.itemDescription {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 16px;
+padding-right: 30px;
+margin-top: 10px;
+font-weight: 300;
+line-height: 1.2em;
+}
+
+.allItems {
+	max-width: 608px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background: linear-gradient(white, white);
+}
+
+.allItemsCollapsed {
+	height: 482px;
+	max-width: 608px;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+
+.itemContainer {
+	width: 302px;
+	height: 240px;
+	border-bottom: 1px solid #d2d8e0;
+}
+
+.toggleMenu {
+    position: absolute;
+    left: 383px;
+    height: 50px;
+    width: 287px;
+    z-index: 100;
+    top: 1350px;
+    text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	border: 1px solid #d2d8e0;
+	border-radius: 2px;
+	background-color: white;
+}
+
+.toggleMenuFull {
+    position: sticky;
+    left: 383px;
+    height: 50px;
+    width: 287px;
+    z-index: 100;
+    top: 635px;
+    text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	border: 1px solid #d2d8e0;
+	border-radius: 2px;
+	background-color: white;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggleMenu:hover {
+ border:2px solid #c9022d; 
+}
