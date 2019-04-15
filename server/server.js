@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const jsonParse = bodyParser.json();
-const cors = require('cors');
+const cors = require("cors");
 const path = require("path");
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 3004;
 const db = require("../database/index.js");
 const Menu = require("../database/schema.js");
 
@@ -16,8 +16,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "/../public/")));
 
 //will pull all the data from database:
@@ -43,7 +42,6 @@ app.get("/menus/:Id", (req, res) => {
 app.get("/:Id", (req, res) => {
   res.sendFile(path.join(__dirname, "/../public/index.html"));
 });
-
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400");
 
 h3 {
 font-family: 'Josefin Sans', sans-serif;
@@ -137,3 +138,4 @@ line-height: 1.2em;
 .toggleMenu:hover {
  border:2px solid #c9022d; 
 }
+
